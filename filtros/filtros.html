@@ -23,6 +23,19 @@
 			
 			<h2>Date:'dd/MM/y'</h2>
 			<h4>Antes: {{ exemplos.date}} | Depois: {{ exemplos.date | date:'dd/MM/y'}}</h4>
+
+			<h2>LimitTo:4 em String</h2>
+			<h4>Antes: {{ exemplos.string }} | Depois: {{ exemplos.string | limitTo: 4 }}</h4>
+
+			<h2>LimitTo:-4 em String</h2>
+			<h4>Antes: {{ exemplos.string }} | Depois: {{ exemplos.string | limitTo: -4 }}</h4>
+			
+			<h2>LimitTo: 4 em Array</h2>
+			<h4>Antes: {{ exemplos.array }} | Depois: {{ exemplos.array | limitTo: 4}} </h4>
+			
+			<h2>LimitTo: -4 em Array</h2>
+			<h4>Antes: {{ exemplos.array }} | Depois: {{ exemplos.array | limitTo: -4}} </h4>
+
 		</div>
 	</div>
  	<script src="app.js"></script>
