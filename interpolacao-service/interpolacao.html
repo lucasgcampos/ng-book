@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>$rootScope</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js"></script>
+</head>
+<body>
+	<div ng-app="myApp">
+		<div ng-controller="MyController">
+			<div id="emailEditor">
+				<input ng-model="to" type="email" placeholder="Recipient" />
+				<textarea ng-model="emailBody" placeholder="Escreve 'to' aqui com 2 sublinhados antes e depois."></textarea>
+			</div>
+			<div id="emailPreview">
+				<pre>__ previewText __</pre>
+			</div>
+		</div>
+	</div>
+ 	<script src="app.js"></script>
+ 	<script src="service.js"></script>
+</body>
+</html>
