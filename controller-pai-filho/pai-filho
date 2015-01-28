@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Controllers</title>
+
+	<meta charset="UTF-8"> 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js"></script>
+</head>
+<body>
+	<div ng-app="myApp">
+		<div ng-controller="PaiController">
+			<div ng-controller="FilhoController">
+				<a href="javascript:void(0);"ng-click="sayHello()">Diga Olá</a>
+			</div>
+			{{ pessoa }}
+		</div>				
+	</div>
+ 	<script src="app.js"></script>
+</body>
+</html>
