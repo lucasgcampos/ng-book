@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Controllers</title>
+
+	<meta charset="UTF-8"> 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js"></script>
+</head>
+<body>
+	<div ng-app="myApp">
+		<div ng-controller="FirstController">
+			<h1>{{ pessoa }}</h1>
+			e seu nome é: 
+			<h2>{{ pessoa.nome }}</h2>
+		</div>				
+	</div>
+ 	<script src="app.js"></script>
+</body>
+</html>
