@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filtros</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js"></script>
+</head>
+<body>
+	<div ng-app="myApp">
+		<div ng-controller="MyController">
+			<h1>Filtros:</h1>
+
+			<h2>Uppercase</h2>
+			<h4>Antes: {{ exemplos.uppercase }} | Depois: {{ exemplos.uppercase | uppercase }} </h4>
+			
+			<h2>Lowercase</h2>
+			<h4>Antes: {{ exemplos.lowercase }} | Depois: {{ exemplos.lowercase | lowercase }}</h4>
+
+			<h2>Currency</h2>
+			<h4>Antes: {{ exemplos.currency }} | Depois: {{ exemplos.currency | currency }}</h4>
+
+			<h2>Number: n</h2>
+			<h4>Antes: {{ exemplos.limitDecimal }} | Depois: {{ exemplos.limitDecimal | number:2 }}</h4>
+			
+			<h2>Date:'dd/MM/y'</h2>
+			<h4>Antes: {{ exemplos.date}} | Depois: {{ exemplos.date | date:'dd/MM/y'}}</h4>
+		</div>
+	</div>
+ 	<script src="app.js"></script>
+</body>
+</html>
